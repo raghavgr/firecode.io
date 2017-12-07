@@ -14,7 +14,7 @@ Modified to :
 """
 def flip_horizontal_axis(matrix):
     """
-    Flip 2D matrix
+    Flip 2D matrix horizontally
     """
     # # [[1, 1], [0, 0]]
     # tempRow = matrix[0]
@@ -24,7 +24,7 @@ def flip_horizontal_axis(matrix):
         return
 
     for i_row in range(len(matrix) / 2):
-        tempRow = matrix[i_row]
+        temp_row = matrix[i_row]
         matrix[i_row] = matrix[len(matrix) - 1 - i_row]
-        matrix[len(matrix) - 1 - i_row] = tempRow
+        matrix[len(matrix) - 1 - i_row] = temp_row
         
